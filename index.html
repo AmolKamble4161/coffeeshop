@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee</title>
+    <link rel="stylesheet" href="syle.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="head" >
+        <a href="#main">
+            <img src="images\Coffee-logo.png" alt="Coffee logo">
+            <div class="title">
+                <h3>Central</h3>
+                <h3>Coffee</h3>
+            </div>
+        </a>
+        </div>
+        <div class="nav">
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#location">Location</a>
+        </div>
+    </header>
+    <div class="main" id="main">
+        <div class="background">
+            <img src="images\41592.jpg" alt="coffee-background" class="mySlides">            
+            <img src="images\2402088.jpg" alt="coffee-background" class="mySlides">
+            <img src="images\5043151.jpg" alt="coffee-background" class="mySlides">
+            <img src="images\coffee-background-3.jpg" alt="coffee-background" class="mySlides">
+            <img src="images\coffee-background.jpg" alt="coffee-background"   class="mySlides">
+        </div>
+        <div class="wrap">
+            <h1>Central &nbsp;Coffee</h1>
+            <p>Bespoke organically-sourced coffee</p>
+        </div>
+    </div>
+    <div class="about" id="about">
+        <h3>About</h3>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto tenetur id modi unde esse corporis quisquam reiciendis totam 
+            assumenda veniam laudantium perspiciatis maxime, iure nisi ut doloribus! Quasi veniam id assumenda accusamus debitis odio nemo, 
+            placeat natus. A sunt animi atque culpa. Tempora inventore ipsa repudiandae iusto, rem ab quos recusandae minima iure ratione 
+            nobis cum sequi delectus quo unde!
+        </p>
+        <div class="images">
+            <img src="images\item-1.jpg" alt="coffee images">
+            <img src="images\item-2.jpg" alt="coffee images">
+            <img src="images\item-3.jpg" alt="coffee images">
+            <img src="images\item-4.jpg" alt="coffee images">
+        </div>
+    </div>
+    <div class="menu" id="menu">
+        <h3>Menu</h3>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto tenetur id modi unde esse corporis quisquam reiciendis totam 
+            assumenda veniam laudantium perspiciatis maxime, iure nisi ut doloribus! Quasi veniam id assumenda accusamus debitis odio nemo, 
+            placeat natus. A sunt animi atque culpa. Tempora inventore ipsa repudiandae iusto, rem ab quos recusandae minima iure ratione 
+            nobis cum sequi delectus quo unde!
+        </p>
+        <div class="menu-items">
+            <div class="box">
+                <h4>DRINKS</h4>
+                <img src="images\drink-1.jpg" alt="Drinks">
+                <ul>
+                    <li>La Catalina (Colombia)</li>
+                    <li>Guarumales (Ecuador)</li>
+                    <li>Rukondo (Rwanda)</li>
+                    <li>Peppermint Tea</li>
+                    <li>Black tea</li>
+                </ul>
+                <a href="#">View More</a>
+            </div>
+            <div class="box">
+                <h4>FOOD</h4>
+                <img src="images\food-1.jpg" alt="Food">
+                <ul>
+                    <li>Frittata (Herb and Veggie, Italian, Corned Beef)</li>
+                    <li>Breakfast sandwich</li>
+                    <li>Cobb salad</li>
+                    <li>Various baked goods</li>
+                </ul>
+                <a href="#">View More</a>
+            </div>
+        </div>
+    </div>
+    <div class="location" id="location">
+        <h1>Location</h1>
+        <div class="wraper">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5734.725021973588!2d73.77480591516981!3d18.564193972100856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1644072686449!5m2!1sen!2sin" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="hours">
+                    <div class="time">
+                        <h2>Hours</h2>
+                        <P>Mon - Thurs : 7AM - 8PM</P>
+                        <P>Fri - Sun : 8AM - 10PM</P>
+                    </div>
+                    <div class="contact">
+                        <h2>Get In Touch</h2>
+                        <p>Phone: 0203 441 4544</p>
+                        <p>Email: <em>send us on email</em> </p>
+                    </div>
+                    <div class="add">
+                        <h2>Address</h2>
+                        <p>
+                            101, The Amazing Building, People Building, Manchester. 400 105.
+                        </p>
+                    </div>
+                </div>
+        </div>
+        <div class="social">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-instagram-square"></i>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; Copyright  2022. All Rights Reserved. Central Coffee</p>
+    </footer>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 4000);
+        }
+    </script>
+</body>
+</html>

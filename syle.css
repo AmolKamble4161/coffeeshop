@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Lato:wght@300&family=Tangerine&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* HEADER SECTION */
+header{
+    padding: 10px 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #36384C;
+    color: #fff;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+}
+header .head a{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+.head img{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: -7px;
+}
+.head img:hover{
+    transform: scale(1.2);
+}
+.head .title{
+    margin-left: 9px;
+}
+.head .title:hover h3{
+    color: #a0a0a1;
+    transition: all .5s ease;
+}
+header .nav a{
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    margin-left: 30px;    
+    font-weight: 500;    
+    transition: 0.3s ease;
+}
+header .nav a:before{
+    position: absolute;
+    content: "";
+    background: #fff;
+    width: 0;
+    height: 3px;
+    bottom: -4px;
+    left: 0;
+    transition: 0.3s ease;
+}
+header .nav a:hover::before{
+    width: 100%;
+}
+
+/* MAIN SECTION */
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 160px ;
+    height: 100vh;
+    /* background-image: url(../Coffee/images/coffee-background-3.jpg);
+    background-size: cover; */
+}
+.main .background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.main .background:before{
+    position: absolute;
+    content: "";
+    height: 100vh;
+    width: 100%;
+    background: #0000009e;
+    z-index: 1;
+}
+.main .background img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    transition: all .5s ease;
+    
+
+}
+.main .wrap{
+    text-align: center;
+    color: #C3C3C3;
+    z-index: 1;
+}
+.main .wrap h1{
+    font-family: 'Fleur De Leah', cursive;
+    font-size: 10rem;
+}
+.main .wrap p{
+    font-family: 'Tangerine', cursive;
+    font-size: 3rem;
+    color: #fff;
+}
+
+/* ABOUT SECTION */
+.about{
+    padding: 100px 200px;
+    color: #36384C;
+}
+.about h3{
+    font-size: 3rem;
+}
+.about p{
+    font-size: 18px;
+    line-height: 27px;
+    margin: 30px 0px;
+}
+.about .images{
+    display: flex;
+    justify-content: space-between;
+}
+.about .images img{
+    height: 200px;
+    width: 200px;
+}
+
+/* MENU SECTION */
+.menu{
+    background-color: #36384C;
+    color: #fff;
+    padding: 100px 200px;
+}
+.menu h3{
+    font-size: 3rem;
+}
+.menu p{
+    font-size: 18px;
+    line-height: 27px;
+    margin: 30px 0px;
+}
+
+/* Menu-items */
+.menu-items{
+    display: flex;
+    justify-content: space-between;
+}
+.menu-items .box img{
+    height: 300px;
+    width: 400px;
+}
+.box h4{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0px;
+}
+.box ul{
+    margin: 20px 0px;
+    position: relative;
+    list-style-position: inside;
+    list-style-type: circle;
+}
+.box ul li{
+    line-height: 24px;
+    font-size: 17px;
+}
+.box a{
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid;
+    padding: 4px 6px;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: all .5s ease;
+}
+.box a:hover{
+    background-color: #fff;
+    color: #36384C;
+    border-color: #fff;
+    font-weight: bold;
+    transition: all .5s ease;
+}
+
+/* LOCATION */
+.location{
+    padding: 100px 200px;
+    color: #36384C;
+    position: relative;
+}
+.location h1{
+    font-size: 45px;
+    margin-bottom: 18px;
+}
+.location .wraper{
+    display: flex;
+}
+.location .wraper .hours{
+    position: relative;
+    left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.location .wraper .hours .contact{
+    margin: 20px 0px;
+}
+.location .wraper .hours .contact em{
+    text-decoration: underline;
+}
+.location .wraper .hours h2{
+    margin-bottom: 7px;
+}
+.location .wraper .hours .add{
+    width: 50%;
+}
+.location .social{
+    position: absolute;
+    right: 50px;
+    display: grid;
+    bottom: 226px;
+}
+.location .social i{
+    font-size: 30px;
+    border: 1px solid #94934a;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+.location .social i:hover{
+    transform: scale(1.2);
+    color: #8e8ef1;
+}
+/* FOOTER */
+footer{
+    text-align: center;
+    padding: 20px;
+    background: #36384c;
+    color: #fff;
+}
